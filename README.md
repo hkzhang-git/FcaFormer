@@ -66,3 +66,19 @@ Currently, one main research line in designing a more efficient vision transform
 
 
 ## Test on edge device
+batch size=1, image size=224, four threads. ARM:Quad Core Cortex-A17
+
+| Models | #params. | MACs | Latency (ms) | Memeory (M) |  Acc (%) | pretrained weights | 
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+ConvNext-Tiny  |  29  | 4.5  | 875  | 129  | 82.1 | - |
+ConvNext-Small |  50  | 8.7  | 1618  | 211  |83.1 | - |
+ConvNext-Base  |  89  | 15.4  | 2708 | 364  | 83.8 | -  |
+ConvNext-Large | 198  | 34.4  | 5604  | 764  | 84.3 | - |
+Swin-Tiny      | 29  | 4.5  | 588  | 139  | 81.3 | - |
+Swin-Small     | 50  | 8.7  | 1576  | 222  | 83.0 | - |
+Swin-Base      | 88  | 15.4  | 2624  | 378  | 83.5 | - |
+FcaFormer-L1(Micro) | 6.2  | 1.4  | 312  | 42 | 80.3| - |
+FcaFormer-L2(Tiny)  | 16   | 3.6  | 728  | 95 | 83.1 | - |
+FcaFormer-L3(Small) | 28   | 6.7  | 1344  | 148  | 84.2| -  |
+FcaFormer-L4(Base)  | 66   | 14.5  | 2624 | 328  | 84.9 | - |
+
