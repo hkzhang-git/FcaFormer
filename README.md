@@ -38,7 +38,16 @@ Currently, one main research line in designing a more efficient vision transform
  
  ## Semantic segmentation on ADE20K
 
-
+| Method | Backbone | mIOU|  #params  |  MACs |
+|:---:|:---:|:---:|:---:|:---:|
+| DNL      | ResNet-101 |  46.0    | 69    | 1249  |
+| OCRNet   | ResNet-101 |  45.3    | 56    | 923   |
+|UperNet   | ResNet-101 |  44.9    | 86    | 1029  |
+|UperNet   | DeiT III (ViT-S) | 46.8 | 42  | 588   |
+|UperNet   | Swin-T     | 45.8     | 60    |  945  |
+|UperNet   | ConNext-T  | 46.7     | 60    | 939   |
+|UperNet   | FcaFormer-L2 | 47.6   | 46    | 730   |
+ 
 ## Object detection on COCO
 
 
