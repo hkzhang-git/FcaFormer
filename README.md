@@ -4,13 +4,13 @@ Official PyTorch implementation of **FcaFormer**
 ---
 Comparison with SOTA models
 <p align="center">
-<img src="https://s1.ax1x.com/2022/11/14/zA1VYV.png" width=60% height=60% 
+<img src="https://s1.ax1x.com/2023/03/20/pptbZ7Q.png" width=60% height=60% 
 class="center">
 </p>
 
 Architecture
 <p align="center">
-<img src="https://s1.ax1x.com/2022/11/14/zA1CLj.md.png" width=100% height=100% 
+<img src="https://s1.ax1x.com/2023/03/20/pptbmkj.png" width=100% height=100% 
 class="center">
 </p>
 A CabViT stage which consists of L CabViT blocks. Compared with standard ViT blocks, we add token merge and enhancement (TME) part,
@@ -19,7 +19,7 @@ channel mixing (FFN). The digest tokens are then used in later blocks as extra t
 with learned scaling factor
 
 <p align="center">
-<img src="https://s1.ax1x.com/2022/11/14/zA19yQ.png" width=60% height=60% 
+<img src="https://s1.ax1x.com/2023/03/20/pptbnts.png" width=60% height=60% 
 class="center">
 </p>
 The overall structure of CabViT Mobels for image classification tasks. (a) Plain CabViT model (CabViT-P). This model is directly modified from the DeiT structure, where an extra classification query token is used to get classification features. (b) Hybrid CabViT model (CabViT-H). The ConvNet stages are composed of ConvNext
