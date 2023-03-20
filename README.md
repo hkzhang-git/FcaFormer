@@ -1,5 +1,5 @@
-# CabViT: Cross Attention among Blocks for Vision Transformer
-Official PyTorch implementation of **CabViT**
+# Fcaformer: Forward Cross Attention in Hybrid Vision Transformer
+Official PyTorch implementation of **FcaFormer**
 
 ---
 Comparison with SOTA models
