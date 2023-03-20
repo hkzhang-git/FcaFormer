@@ -2,7 +2,7 @@
 Official PyTorch implementation of **FcaFormer**
 
 ---
-Comparison with SOTA models
+Comparison with SOTA models. The latency is measured on a single NVIDIA RTX 3090 GPU with batchsize=64.
 <p align="center">
 <img src="https://s1.ax1x.com/2023/03/20/pptbZ7Q.png" width=100% height=100% 
 class="center">
@@ -49,6 +49,20 @@ Currently, one main research line in designing a more efficient vision transform
 |UperNet   | FcaFormer-L2 | 47.6   | 46    | 730   |
  
 ## Object detection on COCO
+
+| Backbone | #params. | MACs | APbox | APbox50  |  APbox75| APmask | APmask50 | APmask75 |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| Mask-RCNN 3 × schedule  |
+|Swin-T      | 48  |  267   |  46.0  | 68.1  | 50.3  | 41.6  | 65.1  | 44.9 |
+|ConvNext-T  | 48  |  262   |  46.2  | 67.9  | 50.8  | 41.7  | 65.0  | 44.9 |
+|FcaFormer-L2| 37  |  249   |  47.0  | 68.9  | 51.8  | 42.1  | 65.7  | 45.4 |
+| Cascade Mask-RCNN 3 × schedule|
+|X101-64    | 140  | 972    |  48.3  | 66.4  | 52.3  | 41.7  | 64.0  | 45.1 |
+|Swin-T     | 86   | 745    |  50.4  | 69.2  | 54.7  | 43.7  | 66.6  | 47.3 |
+|ConvNext-T | 86   | 745    |  50.4  | 69.1  | 54.8  | 43.7  | 66.5  | 47.3 |
+|FcaFormer-L2| 74  | 728    |  51.0  | 69.4  | 55.5  | 43.9  | 67.0  | 47.4 |
+
+
 
 
 ## Test on edge device
