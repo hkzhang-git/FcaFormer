@@ -1,0 +1,6 @@
+# train ******************************************************************************
+PORT=29501 bash tools/dist_train.sh configs/fcaformer/upernet_fcaformer_l2_160k_ade20k_ms.py 8 --work-dir /home/disk/result/fcaformer/ADE20k_seg/fcaformer_l2 --seed 0 --deterministic --options model.pretrained='/home/disk/result/fcaformer/imgnet1k_cls/fcaformer_l2/checkpoint-best.pth'
+
+
+# test *********************************************************************************
+PORT=295001 bash tools/dist_test.sh configs/fcaformer/upernet_fcaformer_l2_160k_ade20k_ms.py /home/disk/result/fcaformer/ADE20k_seg/fcaformer_l2/iter_160000.pth 4 --eval mIoU --aug-test
