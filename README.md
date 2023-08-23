@@ -78,7 +78,7 @@ Swin-Tiny      | 29  | 4.5  | 588  | 139  | 81.3 | - |
 Swin-Small     | 50  | 8.7  | 1576  | 222  | 83.0 | - |
 Swin-Base      | 88  | 15.4  | 2624  | 378  | 83.5 | - |
 FcaFormer-L1(Micro) | 6.2  | 1.4  | 312  | 42 | 80.3| - |
-FcaFormer-L2(Tiny)  | 16   | 3.6  | 728  | 95 | 83.1 | - |
+FcaFormer-L2(Tiny)  | 16   | 3.6  | 728  | 95 | 83.1 | [FcaFormer-L2](https://pan.baidu.com/s/1X8Ou539s48s3l4bX8lV2Zg) Access Code：1234 |
 FcaFormer-L3(Small) | 28   | 6.7  | 1344  | 148  | 84.2| -  |
 FcaFormer-L4(Base)  | 66   | 14.5  | 2624 | 328  | 84.9 | - |
 
