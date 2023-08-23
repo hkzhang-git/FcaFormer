@@ -1,0 +1,16 @@
+## training ***********************************************
+# mask rcnn
+bash tools/dist_train.sh configs/fcaformer/mask_rcnn_fcaformer_l2_set1_480-800_adamw_3x_coco_in1k.py 8 --work-dir /home/disk/result/fcaformer/coco_det/mask_rcnn_fcaformer_l2_set1 --cfg-options model.pretrained=/home/disk/result/fcaformer/imgnet1k_cls/fcaformer_l2/checkpoint-best.pth
+
+# cascade mask rcnn
+bash tools/dist_train.sh configs/fcaformer/cascade_mask_rcnn_fcaformer_l2_set1_480-800_adamw_3x_coco_in1k.py 8 --work-dir /home/disk/result/fcaformer/coco_det/cascade_mask_rcnn_fcaformer_l2_set1 --cfg-options model.pretrained=/home/disk/result/fcaformer/imgnet1k_cls/fcaformer_l2/checkpoint-best.pth
+
+
+## test *****************************************************
+
+# mask rcnn
+bash tools/dist_test.sh configs/fcaformer/mask_rcnn_fcaformer_l2_set1_480-800_adamw_3x_coco_in1k.py /home/disk/result/fcaformer/coco_det/mask_rcnn_fcaformer_l2_set1/latest.pth 8 --eval bbox segm
+
+# cascade mask rcnn
+bash tools/dist_test.sh configs/fcaformer/cascade_mask_rcnn_fcaformer_l2_set1_480-800_adamw_3x_coco_in1k.py /home/disk/result/fcaformer/coco_det/cascade_mask_rcnn_fcaformer_l2_set1/latest.pth 8 --eval bbox segm
+
